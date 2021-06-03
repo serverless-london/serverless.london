@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Theodo",
+        "logo": "https://res.cloudinary.com/serverlessdays/image/upload/v1622718009/London/User%20Group/Logo_Theodo_cropped.svg",
+        "dimensions": {
+            "width": 120
+        },
+        "url": "https://www.theodo.co.uk"
+    },
+    {
+        "name": "Senzo",
+        "logo": "https://res.cloudinary.com/serverlessdays/image/upload/v1622717981/London/User%20Group/SENZO_CONCEPT_PRIMARY_LOGO_ONE.svg",
+        "dimensions": {
+            "width": 180
+        },
+        "url": "https://senzo.io"
+    }
+]

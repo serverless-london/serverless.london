@@ -1,0 +1,11 @@
+<div class="w-full sm:w-4/5 md:w-3/4 lg:w-3/5 p-8 mx-auto">
+    <div class="p-2 sm:p-4 flex flex-wrap justify-around items-center">
+    {% for sponsor in sponsors %}
+        {% if sponsor.dimensions %}
+            <a class="no-underline" href="{{sponsor.url}}" target="_blank"><img height="{{ sponsor.dimensions.height }}" width="{{ sponsor.dimensions.width }}" src="{{ sponsor.logo }}" alt="Logo for {{ sponsor.name }}" /></a>
+        {% else %}
+            <a class="no-underline" href="{{sponsor.url}}" target="_blank"><img src="{{ sponsor.logo }}" alt="Logo for {{ sponsor.name }}" /></a>
+        {% endif %}
+    {% endfor %}
+    </div>
+</div>

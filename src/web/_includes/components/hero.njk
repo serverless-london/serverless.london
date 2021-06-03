@@ -1,0 +1,14 @@
+{% from "components/nextEvent.njk" import nextEvent %}
+
+<div class="mx-auto container flex flex-wrap items-center mt-4 sm:mt-12 fg-base font-sans">
+    <div class="w-full sm:w-2/5">
+        <div class="w-40 mx-auto">
+            <h1 class="text-center sm:text-left text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl">Serverless London User Group</h1>
+        </div>
+    </div>
+    <div class="w-full sm:w-3/5 mt-8 sm:mt-0 ">
+        <div class="mx-auto w-full sm:w-3/5 bg-base-2 fg-base-2">
+            {{ nextEvent(events[0]) }}
+        </div>
+    </div>
+</div>
