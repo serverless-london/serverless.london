@@ -8,7 +8,13 @@
     </div>
     <div class="w-full sm:w-3/5 mt-8 sm:mt-0 ">
         <div class="mx-auto w-full sm:w-3/5 bg-base-2 fg-base-2">
-            {{ nextEvent(events[0]) }}
+            {% if events[0] %}
+                {{ nextEvent(events[0]) }}
+            {% else %}
+                <div class="font-sans p-4 mx-auto text-center h-full">
+                    <a class="no-underline text-lg italic" href="https://github.com/serverless-london/speakers" target="_blank">Speak at the next meetup</a>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
